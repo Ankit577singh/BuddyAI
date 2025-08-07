@@ -18,7 +18,12 @@ app.use(cors(
 ));
 
 connectDB();
-
+app.get('/health',(req,res)=>{
+  res.status(201).json({
+    "success":"true",
+    "message":"Server is running"
+  })
+})
 app.post('/chat', async (req, res) => {
   try {
     const { id, mes } = req.body;
