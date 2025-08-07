@@ -4,6 +4,7 @@ import { FiSend, FiMoon, FiSun, FiLoader } from 'react-icons/fi';
 import { FaUser, FaRobot } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
 import { BsThreeDots } from 'react-icons/bs';
+const BACKEND_URL=process.env.PUBLIC_BACKEND_URL
 
 function App() {
   const [input, setInput] = useState('');
@@ -37,7 +38,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8080/chat', {
+      const response = await axios.post(`${BACKEND_URL}/chat`, {
         id: userId,
         mes: input,
       });
