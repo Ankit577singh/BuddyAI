@@ -11,7 +11,11 @@ app.use(express.json());
 const cors = require('cors');
 const { configDotenv } = require('dotenv').config();
 const PORT=process.env.PORT;
-app.use(cors());
+app.use(cors(
+  {
+    origin:process.env.ORIGIN
+  }
+));
 
 connectDB();
 
