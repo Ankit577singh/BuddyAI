@@ -1,0 +1,29 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev": "parcel public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.6.2",
+    "framer-motion": "^12.23.12",
+    "markdown": "^0.5.0",
+    "parcel": "^2.15.4",
+    "postcss": "^8.4.31",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^4.12.0",
+    "react-markdown": "^8.0.7",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}
